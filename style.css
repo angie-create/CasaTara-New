@@ -1,0 +1,603 @@
+/* ------------------- Globals ------------------------------*/
+
+:root {
+
+    --malva: #9A7B8B;
+    --verde-salvia: #7E938A; 
+    --eucalipto: #A3B1A2;
+    --oliva-suave: #BFC8B6;
+    --arena: #E5DECA;
+    --luz-dorada: #F4F0ED;
+    --gris: #757575;
+    --font-family: "Montserrat", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    color: var(--gris);
+}
+
+body {
+    height: 100vh;
+    background-color: var(--luz-dorada);
+}
+
+.sectionToken {
+    border-radius: 1.25rem;
+    height: 1.8rem;
+    display: flex;
+    width: 12.80rem;
+}
+
+.sectionToken p {
+    font-size: 0.75rem;
+    text-align: center;
+    margin: auto;
+    text-transform: uppercase;
+}
+
+.link {
+    padding-right: 2rem;
+    width: 100%;
+    text-align: right;
+    color: var(--verde-salvia);
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    transition: 5ms;
+}
+
+.link:hover {
+    color: var(--malva);
+}
+
+button {
+    width: 10.4375rem;
+    height: 2rem;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px 0px rgba(117, 117, 117, 0.25);
+    border: none;
+    color: var(--eucalipto);
+    background-color: var(--luz-dorada);
+    transition: 1s;
+}
+
+button:hover{
+    background-color: var(--eucalipto);
+    color: var(--luz-dorada);
+}
+
+.malva {
+    background-color: var(--malva);
+    color: var(--luz-dorada);
+}
+
+
+
+/* ------------------------- Fonts -------------------------- */
+
+h1 {
+    font-size: 3.25rem;
+    font-weight: 400;
+    text-align:center;
+}
+
+h2 {
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+h3 {
+    color: var(--verde-salvia);
+    font-weight: 300;
+    font-size: 2rem;
+    text-align: center;
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: "Raleway";
+    font-size: 0.875rem;
+    font-weight: 300;
+    text-align: center;
+    line-height: 140%;
+}
+
+/*--------------------- navbar -------------------------------*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5.3rem;
+    padding: 10px;
+}
+
+.logo {
+    width: auto;
+    height: 4rem;
+}
+
+nav .logo {
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+nav .logo:hover {
+    transform: scale(1.2);
+}
+
+nav .nav-links {
+    list-style: none;
+}
+
+nav .nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+    transition: all 0.3s;
+}
+
+nav .nav-links li:hover {
+    transform: scale(1.1);
+}
+
+nav .nav-links a {
+    font-size: 400;
+    color: var(--black);
+    transition: all 0.3s;
+}
+
+nav .nav-links a:hover {
+    color: var(--pink);
+    text-decoration: underline;
+}
+
+.menu {
+    display: none;
+}
+
+.menuButton {
+
+    border-radius: 5px;
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 300;
+    height: 2rem;
+    width: 5rem;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s;
+}
+
+
+@media screen and (max-width:800px){
+    .nav-links {
+        display: none;
+    }
+    .menu {
+        display: inherit;
+    }
+}
+/*nav*/
+nav a {
+    text-decoration: none;
+}
+
+nav .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: var(--eucalipto);
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+}
+
+nav .overlay .overlay-content{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+nav .overlay a {
+    padding: 1rem;
+    font-size: 2rem;
+    display: block;
+    transition: all 0.3s ease 0s;
+    font-weight: 400;
+    color: var(--luz-dorada);
+}
+
+nav .overlay a:hover, nav .overlay a:focus {
+    color: var(--pink);
+    text-decoration: underline;
+}
+
+nav .overlay .close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 2rem;
+}
+
+@media screen and (max-height: 450px) {
+    nav .overlay a{
+        font-size: 20px;
+    }
+
+    nav .overlay .close {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+/*------------------------ header ----------------------------*/
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem; 
+}
+
+.bienvenidaInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+main p {
+    font-size: 1.14rem;
+}
+
+main .sectionToken {
+    background-color: var(--arena);
+    opacity: 50%;
+}
+
+main .sectionToken p {
+    color: var(--verde-salvia);
+}
+
+/* -------------------- Filosofia ----------------------------*/
+
+.filosofia {
+    position: relative;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.backgroundImagen {
+    min-width: 100%;
+    min-height: 25.8rem;
+    background-image: url("./img/yoga-amigas.jpg");
+    background-size: cover;
+}
+
+.filosofiaInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2rem;
+    margin-right: 2rem; 
+    gap: 1rem;
+}
+
+.filosofia .sectionToken {
+    background-color: var(--eucalipto);
+    opacity: 50%;
+}
+
+.filosofia .sectionToken p {
+    color: var(--arena);
+}
+
+/* --------------- proximos eventos --------------------------------- */
+
+.retirosEventos {
+    height: 100vh;
+    background-color: var(--oliva-suave);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.retirosEventosInfo {
+    margin-top: 5.94rem;
+    margin-bottom: 2.4rem;
+    gap: 0.625rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2rem;
+    margin-right: 2rem; 
+}
+
+.retirosEventos .sectionToken {
+    background-color: var(--luz-dorada);
+    opacity: 50%;
+}
+
+.eventCard {
+    background-color: white;
+    width: 22.31rem;
+    height: 30rem;
+    border-radius: 0.625rem;
+    box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.eventCardTitle {
+    width: 100%;
+    height: 12.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding-left: 1rem;
+    padding-bottom: 0.875rem;
+    border-top-left-radius: 0.625rem;
+    border-top-right-radius: 0.625rem;
+    background-color: var(--arena);
+}
+
+.eventLocation {
+    display: inline-flex;
+    gap: 1.0625rem;
+    align-items: center;
+}
+
+.eventCardContent {
+    padding-top: 1.3125rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    margin-bottom: 1rem;
+}
+
+.eventDetails {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.eventInfo {
+    background-color: var(--luz-dorada);
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+#eventDuration, #eventPrice {
+    width: 9.8125rem;
+
+}
+
+.eventCardContainer {
+    margin-bottom: 4rem;
+}
+
+/* -------------------- Referencias --------------------------*/
+
+.referencias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+    gap:1.5rem;
+}
+.referencias .sectionToken {
+    background-color: var(--malva);
+    opacity: 50%;
+}
+
+.referencias .sectionToken p {
+    color: var(--luz-dorada);
+}
+
+.referenciasContainer, .referencia2 {
+    padding-bottom: 4.56rem;
+    display:flex;
+    flex-direction: column;
+    gap: var(--spacing-400, 2rem);
+}
+
+.referencia {
+    max-width:  19rem;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25);
+    display: flex;
+    padding: var(--spacing-400, 2rem);
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: var(--spacing-200, 1rem);
+    align-self: stretch;
+}
+
+.profile {
+    display: inline-flex;
+    gap: 1.0625rem;
+    align-items: center;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+}
+
+.avatar {
+    border-radius: 28px;
+    width: 28px;
+    height: 28px;
+}
+
+.name {
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 12.1px */
+}
+
+.name2 {
+    font-size: 0.6875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 12.1px */
+}
+
+#testimonio1 {
+    background-color: var(--eucalipto);
+}
+
+#testimonio2 {
+    background-color: var(--arena);
+}
+
+#testimonio3 {
+    background-color: var(--malva);
+}
+
+.referencia strong {
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 24px */
+    text-align: center;
+}
+
+.referencia p {
+    font-size: .8125rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+#testimonio1 p, #testimonio1 strong, #testimonio3 p, #testimonio3 strong {
+    color: var(--luz-dorada);
+}
+
+
+
+/*----------------------- CTA ------------------------------------*/
+
+.CTA {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+/*-----------------------input-----------------------------------*/
+
+.inputCard {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+input {
+    border-color: var(--gray);
+    border-radius: 5px;
+    height: 2rem;
+    margin-bottom: 10px;
+    min-width: 23rem;
+}
+
+#message {
+    height: 6rem;
+}
+
+/*----------------------Footer -----------------------------------*/
+
+footer {
+    background-color: var(--oliva-suave);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1.25rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    align-items: center;
+
+
+}
+
+.footerTitle {
+    font-family: "Raleway";
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: var(--verde-salvia);
+}
+
+footer p {
+    text-align: left;
+    font-size: 0.75rem;
+}
+
+hr {
+    color: var(--luz-dorada);
+    width: 100%;
+    height: 1px;
+}
+
+input {
+    width: 100%;
+    height: 2rem;
+    border-radius: 5px;
+    border: none;
+}
+
+footer button {
+    width: 100%;
+}
+
+footer button:hover{
+    background-color: var(--arena);
+    color: var(--malva);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

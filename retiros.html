@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link href="./style.css" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <div>
+                <a href="./index.html"><img class="logo" src="#" alt="Casa Tara Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="./about.html">Acerca de</a></li>
+                <li><a href="./clases.html">Clases</a></li>
+                <li><a href="./retiros.html">Retiros & Eventos</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+            <a onclick="openNav()" class="menu" href="#"><button class="menuButton">Menu</button></a>
+            <div class="overlay" id="mobile-menu">
+                <a onclick="closeNav()" href="" class="close">&times;</a>
+                <div class="overlay-content">
+                    <a href="./about.html">Acerca de</a>
+                    <a href="./clases.html">Clases</a>
+                    <a href="./retiros.html">Retiros & Eventos</a>
+                    <a href="./contacto.html">Contacto</a>
+                </div>
+            </div>
+        </nav>
+        <header>
+            <h3>Retiros & Eventos</h3>
+            <p>Profundiza tu práctica y conéctate con nuestra comunidad a través de retiros transformadores y eventos especiales durante todo el año.</p>
+        </header>
+        <main class="clases-eventosSection">
+            <div class="clases-eventosContainer">
+                <div class="eventCard">
+                    <div class="eventCardTitle">
+                        <div class="eventDates"><p>Nov 15-20, 2025</p></div>
+                        <h4>Retiro de Yoga</h4>
+                        <div class="eventLocation">
+                            <img src="#" alt="">
+                            <p>Bacalar, Quintana Roo</p>
+                        </div>
+                    </div>
+                    <div class="eventCardContent">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        <div class="eventDetails">
+                            <div class="eventInfo" id="eventDuration">
+                                <p>DURACIÓN</p>
+                                <p>3 días, 2 noches</p>
+                            </div>
+                            <div class="eventInfo" id="eventPrice">
+                                <p>PRECIO</p>
+                                <p>$350 USD</p>
+                            </div>
+                        </div>
+                        <div class="eventInfo" id="eventCapacity">
+                            <p>CAPACIDAD</p>
+                            <p>Cupo limitado a 20 personas</p>
+                        </div>
+                    </div>
+                    <button class="malva">Más información</button>
+                </div>
+            </div>
+        </main>
+        <section class="opiniones">
+            <hgroup>
+                <div class="sectionToken"><p>Opiniones</p></div>
+                <h3>Lo que anteriores participantes dicen</h3>
+            </hgroup>
+            <p>Algunas opiniones de quienes han asistido a nuestros retiros y eventos.</p>
+            <div class="opinionesContainer">
+                <div class="opinion">
+                    <p>Una gran opción para aquellos que solo pueden practicar 1 vez a la semana</p>
+                    <p>Nombre Apellido</p>
+                    <p>Participante Retiro de Yoga</p>
+                </div>
+                <div class="opinion">
+                    <p>Una gran opción para aquellos que solo pueden practicar 1 vez a la semana</p>
+                    <p>Nombre Apellido</p>
+                    <p>Participante Retiro de Yoga</p>
+                </div>
+                <div class="opinion">
+                    <p>Una gran opción para aquellos que solo pueden practicar 1 vez a la semana</p>
+                    <p>Nombre Apellido</p>
+                    <p>Participante Retiro de Yoga</p>
+                </div>  
+            </div>
+        </section>
+        <section class="preguntasFrecuentes">
+            <h3>Preguntas Frecuentes</h3>
+            <p>Encuentra respuestas a preguntas comunes nuestros retiros y eventos.</p>
+            <div class="preguntasContainer">
+                <div class="pregunta">
+
+                </div>
+            </div>
+        </section>
+        <section class="filosofia">
+            <picture class="backgroundImagen">
+                <img src="#" alt="#">
+            </picture>
+            <div class="filosofiaInfo">
+                <hgroup>
+                    <div class="sectionToken"><p>Experiencias Personalizadas</p></div>
+                    <h3>Crea tu propio retiro o evento</h3>
+                </hgroup>
+                <p>¿Buscas una experiencia personalizada para tu grupo o evento? Podemos diseñar retiros y actividades personalizados, adaptados a sus necesidades, horario e intereses.
+                    Ya sea un programa de bienestar corporativo, una escapada con amigos o una celebración especial, crearemos una experiencia de yoga significativa y transformadora.</p>
+                <ul>
+                    <li>Retiros corporativos de team building</li>
+                    <li>Retiros para grupos de amigos y familiares</li>
+                    <li>Celebraciones pre - boda</li>
+                </ul> 
+                <button>Más Información</button>
+            </div>
+        </section>
+        <section class="CTA">
+            <h3>¿Listo/a para empezar?</h3>
+            <p>Únete a nosotros en uno de nuestros próximos retiros o eventos y profundiza tu práctica en un entorno de apoyo y enriquecedor.</p>
+            <button class="malva">Contáctanos</button>
+        </section>
+        <footer>
+            <strong class="footerTitle">Boletín informativo</strong>
+            <p>Suscríbete a nuestro boletín para recibir las últimas actualizaciones sobre clases, eventos y consejos de bienestar.</p>
+            <input>
+            <button class="malva">Suscribirme</button>
+            <hr>
+            <strong class="footerTitle">Casa Tara</strong>
+            <div class="icons">
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-whatsapp"></i></a>
+            </div>
+        </footer>
+        <script type="text/javascript" src="./nav.js"></script>
+    </body>
+</html>

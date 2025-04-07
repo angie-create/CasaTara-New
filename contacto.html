@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link href="./style.css" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <div>
+                <a href="./index.html"><img class="logo" src="#" alt="Casa Tara Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="./about.html">Acerca de</a></li>
+                <li><a href="./clases.html">Clases</a></li>
+                <li><a href="./retiros.html">Retiros & Eventos</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+            <a onclick="openNav()" class="menu" href="#"><button class="menuButton">Menu</button></a>
+            <div class="overlay" id="mobile-menu">
+                <a onclick="closeNav()" href="" class="close">&times;</a>
+                <div class="overlay-content">
+                    <a href="./about.html">Acerca de</a>
+                    <a href="./clases.html">Clases</a>
+                    <a href="./retiros.html">Retiros & Eventos</a>
+                    <a href="./contacto.html">Contacto</a>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <h3>Contáctanos</h3>
+            <p>Nos encantaría saber de ti. Contáctanos si tienes alguna pregunta sobre clases, retiros, sesiones privadas o simplemente para saludarnos.</p>
+            <div class="cardContainer">
+                <div class="infoCard">
+                    <i></i>
+                    <h4>Visítanos</h4>
+                    <p>Av. del Potosí #124, lomas 1ra sección. San Luis Potosí, México.</p>
+                    <p>Ver el mapa</p>
+                </div>
+                <div class="infoCard">
+                    <i></i>
+                    <h4>Info de Contacto</h4>
+                    <p>Phone:</p>
+                    <p>+52 444 188 3118</p>
+                    <p>email:</p>
+                    <p>casatarayogaslp@gmail.com</p>
+                    <div class="icons">
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="infoCard">
+                    <i></i>
+                    <h4>Horarios</h4>
+                    <div class="horarios">
+                        <div class="dia">
+                            <p>Lun - Vie</p>
+                            <p>7:00AM - 9:00PM</p>
+                        </div>
+                        <div class="dia">
+                            <p>Sábado</p>
+                            <p>7:00AM - 9:00PM</p>
+                        </div>
+                        <div class="dia">
+                            <p>Domingo</p>
+                            <p>Cerrado</p>
+                        </div>
+                    </div>
+                    <p>*Los horarios pueden variar an días festivos y durante eventos especiales</p>
+                </div>
+            </div>
+        </main>
+        <section>
+            <h3>Envíanos un mensaje</h3>
+            <div class="inputCard">
+                <form action="getform.php" method="get">
+                    <label>Nombre:<br /> <input type="text" /></label><br/>
+                    <label>Correo Electronico:<br /> <input type="email" /></label><br/>
+                    <label>Asunto:<br /> <input type="text" /></label><br/>
+                    <label>Mensaje:<br /> <input id="message" type="text" /></label>
+                </form>
+                <button>Enviar Mensaje</button>
+            </div>
+        </section>
+        <section class="preguntasFrecuentes">
+            <h3>Preguntas Frecuentes</h3>
+            <p>Encuentra respuestas a preguntas comunes sobre Casa Tara.</p>
+            <div class="preguntasContainer">
+                <div class="pregunta">
+
+                </div>
+            </div>
+        </section>
+        <section class="CTA">
+            <h3>Vive la experiencia de Casa Tara</h3>
+            <p>La mejor manera de entender lo que hace especial a nuestro estudio es experimentándolo por ti mismo. Únete a una clase y siente la diferencia.</p>
+            <button class="malva">Reservar Clase</button>
+        </section>
+        <footer>
+            <strong class="footerTitle">Boletín informativo</strong>
+            <p>Suscríbete a nuestro boletín para recibir las últimas actualizaciones sobre clases, eventos y consejos de bienestar.</p>
+            <input>
+            <button class="malva">Suscribirme</button>
+            <hr>
+            <strong class="footerTitle">Casa Tara</strong>
+            <div class="icons">
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-whatsapp"></i></a>
+            </div>
+        </footer>
+        <script type="text/javascript" src="./nav.js"></script>
+    </body>
+</html>
